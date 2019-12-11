@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<div id='wrapper'>
+	<h1> Current Polls</h1>
+	{% if latest_question_list %}
+	    <ul>
+	    {% for question in latest_question_list %}
+	        <li><a href="{% url 'poll_detail' question.id %}">{{ question.question_text }}</a></li>
+	    {% endfor %}
+	    </ul>
+	{% else %}
+	    <p>No polls are available.</p>
+	{% endif %}
+	<a href="{% url 'newPoll' %}" class='btn btn-mg btn-primary'>Make new Poll</a>
+</div>
+
+
+{% endblock %}

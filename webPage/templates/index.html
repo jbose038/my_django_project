@@ -1,0 +1,68 @@
+{% load static %}
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href="{% static 'css/cover.css' %}">
+</head>
+<body class='text-center'>
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class='masthead mb-auto'>
+			<div class='inner'>
+				<h3 class='masthead-brand'>Index</h3>
+				<nav class='nav nav-masthead justify-content-center'>
+					<a class='nav-link active' href="{% url 'index' %}">HOME</a>
+					<a class='nav-link' href="{% url 'login' %}">Login</a>
+					<a class='nav-link' href="{% url 'signup' %}">Sign Up</a>
+				</nav>
+			</div>
+		</header>
+
+	  	<main role='main' class='inner cover'>
+			<h1 class='cover-heading'>Django project</h1>
+			<p class='lead'>Go to my github page</p>
+			<p class='lead'>
+				<a href='https://github.com/jbose038' class='btn btn-lg btn-secondary'>Github link</a>
+			</p>
+		</main>
+
+	  <footer class="mastfoot mt-auto">
+	    <div class="inner">
+	      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+	    </div>
+	  </footer>
+	</div>
+</body>
+<!-- 
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href='cover.css'>
+</head>
+
+<body class='text-center'>
+	<div class='cover-container d-flex w-100 h-100 p-3 mx-auto flex-column'>
+		<header class='masthead mb-auto'>
+			<div class='inner'>
+				<h3 class='masthead-brand'>Index</h3>
+				<nav class='nav nav-masthead justify-content-center'>
+					<a class='nav-link active' href="{% url 'index' %}">HOME</a>
+					<a class='nav-link' href="{% url 'login' %}">Login</a>
+					<a class='nav-link' href="{% url 'signup' %}">Sign Up</a>
+				</nav>
+			</div>
+		</header>
+
+		<main role='main' class='inner cover'>
+			<h1 class='cover-heading'>cover page</h1>
+			<p class='lead'>cover is one-page....</p>
+			<p class='lead'>
+				<a href='https://github.com/jbose038' class='btn btn-lg btn-secondary'>Go to my github</a>
+			</p>
+		</main>
+
+		<footer class='mastfoot mt-auto'>
+			<div class='inner'>
+				<p>Cover template for <a href="https:getbootstrap.com/">Bootstrap</a></p>
+			</div>
+		</footer>
+	</div>
+</body>
+ -->

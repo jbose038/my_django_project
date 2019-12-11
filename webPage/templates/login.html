@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id='wrapper'>
+	<h1>LOG IN</h1><br>
+	<form method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+		<input type='submit' value="Log In"/>
+	</form>
+	<br>
+	<a href="{% url 'index' %}" class="btn btn-mg btn-primary">Back to Index</a>
+</div>
+{% endblock %}
